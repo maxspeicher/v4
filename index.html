@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Project: React</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <!-- Font Awesome -->
+        <link href="fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="icon" type="image/png" href="M2.png">
+
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="react/react.development.js"></script>
+        <script src="react/react-dom.development.js"></script>
+        <script>
+            const e = React.createElement;
+        </script>
+
+        <script src="config.js"></script>
+        <script src="components/flags-and-icons.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <script src="components/header.js"></script>
+        <div id="main">
+            <section class="column">
+                <h2>Intro</h2>
+                <p>
+                    Hi! I'm Max and I'm passionate about beautiful and usable design.
+                    I've worked extensively on
+                    <span class="highlight-box">user experience</span>,
+                    <span class="highlight-box">usability</span>, &
+                    <span class="highlight-box">AR/VR</span> topics, in both industry and academia. 👨🏻‍🔬
+                </p>
+                <p>
+                    I received my Ph.D. in Computer Science from
+                    <a href="https://vsr.informatik.tu-chemnitz.de/" target="_blank">Technische Universität Chemnitz</a>
+                    for my work on search interaction optimization and
+                    <span class="highlight-box">human-centered design</span>
+                    at the R&amp;D department of Unister GmbH, Leipzig.
+                    Afterwards, I joined bitstars GmbH in Aachen as a VP to work on their AR/VR platform HoloBuilder.
+                    From 2017 to 2018, I did my post-doc at the University of Michigan in Ann Arbor, MI, where I continued working on AR/VR topics, specifically in the contexts of
+                    <span class="highlight-box">interaction design</span> and
+                    <span class="highlight-box">usability evaluation</span>.
+                    Currently, I'm a UX Manager in the eCommerce department of C&A Europe in Düsseldorf, where I take care of user experience and
+                    <span class="highlight-box">user research</span>.
+                    For my academic work, I received Best Paper awards at ACM CHI and ACM EICS, where I have also regularly served as a reviewer.
+                </p>
+            </section>
+            <section class="column column--short">
+                <h2>Writing</h2>
+                <div id="writing"></div>
+                <script src="components/writing.js"></script>
+            </section>
+            <section class="column column--short">
+                <h2>Work</h2>
+                <div id="work"></div>
+                <script src="components/work.js"></script>
+            </section>
+            <section class="column">
+                <h2>Research</h2>
+                <div id="research"></div>
+                <script src="components/research.js"></script>
+            </section>
+            <section class="column column--short">
+                <h2>Open Source</h2>
+                <div id="open-source"></div>
+                <script src="components/open-source.js"></script>
+            </section>
+            <section class="column column--short">
+                <h2>Ringtennis</h2>
+                <div id="ringtennis"></div>
+                <script src="components/ringtennis.js"></script>
+            </section>
+            <!-- <section class="column column--short">
+                <h2>Other</h2>
+                <div id="other"></div>
+                <script src="components/other.js"></script>
+            </section> -->
+            <footer></footer>
+            <script src="components/footer.js"></script>
+        </div>
+    </body>
+</html>
