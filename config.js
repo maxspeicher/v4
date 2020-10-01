@@ -1,5 +1,7 @@
 const MAX = {
 
+    deleteCookiesForDomains: ['.maxspeicher.com'],
+
     header: {
         title: {
             content: '{M}ax. {S}peicher', // pick TWO letters that should be rotated on hover via {x}
@@ -148,6 +150,16 @@ const MAX = {
         ],
         ringtennis: [
             {
+                when: '2010‒18',
+                title: 'Men\'s Captain',
+                discipline: 'Germany National Ringtennis Team'
+            },
+            {
+                when: '2003‒10',
+                title: 'Coach',
+                discipline: 'VfL Wehbach 1901 e. V.'
+            },
+            {
                 when: '2018',
                 title: '🏆 World Champion',
                 discipline: 'Team'
@@ -178,7 +190,7 @@ const MAX = {
                 discipline: 'Men\'s Singles'
             },
             {
-                when: '2017',
+                when: '2007',
                 title: '🏅 German Champion',
                 discipline: 'Mixed Doubles'
             },
