@@ -1,6 +1,8 @@
+'use strict';
+
 const MAX = {
 
-    deleteCookiesForDomains: ['.maxspeicher.com'],
+    deleteCookiesForDomains: ['.maxspeicher.com'], // necessary to be able to keep GDPR requirements to a minimum
 
     header: {
         title: {
@@ -52,46 +54,46 @@ const MAX = {
                     title: 'I Don’t Have That Much Data! Reusing User Behavior Models for Websites from Different Domains',
                     authors: ['M. Bakaev', 'M. Speicher', 'S. Heil', 'M. Gaedke'],
                     isNew: true,
-                    link: 'https://www.researchgate.net/publication/342044912_I_Don\'t_Have_That_Much_Data_Reusing_User_Behavior_Models_for_Websites_from_Different_Domains',
+                    link: 'https://2008.maxspeicher.com/2020/04/11/2-research-papers-accepted-at-international-conferences-1-best-paper-award/',
                 },
                 {
                     title: 'MRAT: The Mixed Reality Analytics Toolkit',
                     authors: ['M. Nebeling', 'M. Speicher', 'X. Wang', 'S. Rajaram', 'B.D. Hall', 'Z. Xie', 'A.R.E. Raistrick', 'M. Aebersold', 'E.G. Happ', 'J. Wang', 'Y. Sun', 'L. Zhang', 'L. Ramsier', 'R. Kulkarni'],
                     isNew: true,
-                    link: 'https://www.researchgate.net/publication/340136074_MRAT_The_Mixed_Reality_Analytics_Toolkit',
+                    link: 'https://www.mi2lab.com/research/mrat/',
                     award: '🏆 Best Paper Award'
                 },
                 {
                     title: 'What is Mixed Reality?',
                     authors: ['M. Speicher', 'B.D. Hall', 'M. Nebeling'],
-                    link: 'https://www.researchgate.net/publication/332269415_What_is_Mixed_Reality',
+                    link: 'https://2008.maxspeicher.com/2019/12/27/chi-2019-what-is-mixed-reality/',
                     award: '🏅 Best Paper Honorable Mention'
                 },
                 {
                     title: 'XD-AR: Challenges and Opportunities in Cross-Device Augmented Reality Application Development',
                     authors: ['M. Speicher', 'B.D. Hall', 'A. Yu', 'B. Zhang', 'H. Zhang', 'J. Nebeling', 'M. Nebeling'],
-                    link: 'https://www.researchgate.net/publication/325883101_XD-AR_Challenges_and_Opportunities_in_Cross-Device_Augmented_Reality_Application_Development',
+                    link: 'https://dl.acm.org/doi/abs/10.1145/3229089',
                     award: '🏆 Best Paper Award'
                 },
                 {
                     title: 'GestureWiz: A Human-Powered Gesture Design Environment for User Interface Prototypes',
                     authors: ['M. Speicher', 'M. Nebeling'],
-                    link: 'https://www.researchgate.net/publication/324665021_GestureWiz_A_Human-Powered_Gesture_Design_Environment_for_User_Interface_Prototypes'
+                    link: 'https://dl.acm.org/doi/abs/10.1145/3173574.3173681'
                 },
                 {
                     title: 'Search Interaction Optimization: A Human-Centered Design Approach',
                     authors: ['M. Speicher'],
-                    link: 'https://www.researchgate.net/publication/308652443_Search_Interaction_Optimization_A_Human-Centered_Design_Approach'
+                    link: 'https://2008.maxspeicher.com/2015/10/29/the-search-interaction-optimization-toolkit-the-essence-of-my-phd-thesis/'
                 },
                 {
                     title: 'Inuit: The Interface Usability Instrument',
                     authors: ['M. Speicher', 'A. Both', 'M. Gaedke'],
-                    link: 'https://www.researchgate.net/publication/282441105_Inuit_The_Interface_Usability_Instrument'
+                    link: 'https://2008.maxspeicher.com/2015/10/10/inuit-the-interface-usability-instrument/'
                 },
                 {
                     title: 'Ensuring Web Interface Quality through Usability-Based Split Testing',
                     authors: ['M. Speicher', 'A. Both', 'M. Gaedke'],
-                    link: 'https://www.researchgate.net/publication/271269916_Ensuring_Web_Interface_Quality_through_Usability-Based_Split_Testing'
+                    link: 'https://2008.maxspeicher.com/2014/06/17/usability-based-split-testing-or-how-to-infer-web-interface-usability-from-user-interactions/'
                 }
             ]
         },
@@ -201,6 +203,14 @@ const MAX = {
             }
         ]
     },
-    footer: {}
+    footer: {},
+    privacyPolicy: {
+        name: 'Dr.-Ing. Maximilian Speicher',
+        addressLine1: '℅ C&A Mode GmbH & Co. KG, Geschäftsbereich eCommerce',
+        addressLine2: 'Wanheimer Straße 70',
+        zipAndCity: '40472 Düsseldorf',
+        stateAndOrCountry: 'Germany',
+        email: '__maximilian.speicher__@canda.com (underscores have been added for spam protection)'
+    }
 
 };

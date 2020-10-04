@@ -15,21 +15,21 @@
         <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
         <script src="react/react.development.js"></script>
         <script src="react/react-dom.development.js"></script>
-        <script>
-            const e = React.createElement;
-        </script>
-
+        
         <script src="config.js"></script>
+        <script src="components/init.js"></script>
         <script src="components/flags-and-icons.js"></script>
     </head>
     <body>
         <header></header>
         <script src="components/header.js"></script>
-        <section class="column">
-            <h2>Consulting</h2>
-            <p>Coming soon ...</p>
-        </section>
-        <footer></footer>
-        <script src="components/footer.js"></script>
+        <div id="main">
+            <section class="column">
+                <h2>Consulting</h2>
+                <p>Coming soon ...</p>
+            </section>
+            <footer></footer>
+            <script src="components/footer.js"></script>
+        </div>
     </body>
 </html>

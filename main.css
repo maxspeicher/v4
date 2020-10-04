@@ -35,17 +35,17 @@ body {
     font-family: var(--sans-serif-font);
     font-weight: normal;
     line-height: 1.5em;
-    margin: var(--global-margin);
+    margin: var(--global-margin) var(--global-margin) var(--global-margin) 0;
 }
 
 footer {
     clear: left;
     font-family: var(--serif-font);
-    margin: var(--global-margin) 0 0 0;
+    margin: var(--global-margin) 0 0 var(--global-margin);
 }
 
 header {
-    margin: 0 var(--global-margin) var(--global-margin) 0;
+    margin: 0 0 var(--global-margin) var(--global-margin);
 }
 
 h1 {
@@ -100,14 +100,28 @@ p {
 
 .column {
     display: inline-block;
-    /* float: left; */
-    margin: 0 var(--global-margin) var(--global-margin) 0;
+    margin: 0 0 var(--global-margin) var(--global-margin);
     max-width: 30em;
     vertical-align: top;
 }
 
 .column--short {
     max-width: 20em;
+}
+
+.column--wide {
+    max-width: 60em;
+}
+
+@media only screen and (max-width: 49em) { /* 2 short columns + 3 * global margin */
+    .column {
+        margin: 0 0 var(--global-margin) var(--global-margin);
+        max-width: 100%;
+    }
+
+    .column--short, .column--wide {
+        max-width: 100%;
+    }
 }
 
 .column h2 {
