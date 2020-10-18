@@ -99,6 +99,12 @@ const MAX = {
         },
         writing: [
             {
+                title: 'How to become a UX designer — no matter what you studied at uni',
+                publication: 'The Next Web',
+                isNew: true,
+                link: 'https://thenextweb.com/growth-quarters/2020/09/28/how-to-become-a-ux-designer-no-matter-what-you-studied-at-uni/'
+            },
+            {
                 title: 'How to build and lead user experience (UX) teams',
                 publication: 'UX Collective',
                 isNew: true,
@@ -132,8 +138,12 @@ const MAX = {
                 link: 'https://github.com/maxspeicher/maxspeicher.github.io'
             },
             {
-                title: 'My Old Portfolio',
-                link: 'https://github.com/maxspeicher/v3'
+                title: 'MaxSpeicher.com',
+                multipleLinks: {
+                    v1: 'https://github.com/maxspeicher/v1',
+                    v2: 'https://github.com/maxspeicher/v2',
+                    v3: 'https://github.com/maxspeicher/v3'
+                }
             },
             {
                 title: 'MRAT (Mixed Reality Analytics Toolkit)',
@@ -146,8 +156,8 @@ const MAX = {
                 groupProject: true
             },
             {
-                title: 'WaPPU (Was That Page Pleasant to Use?)',
-                link: 'https://github.com/maxspeicher/wappu-service'
+                title: 'Search Interaction Optimization (my Ph.D. thesis)',
+                link: 'https://www.maxspeicher.com/phdthesis'
             }
         ],
         ringtennis: [

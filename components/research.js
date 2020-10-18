@@ -6,6 +6,8 @@ class Research extends React.Component {
         const research = MAX.content.research.publications;
         const entries = [];
 
+        var highlightAuthorHasBeenMentioned = false;
+
         for (var i=0; i<research.length; ++i) {
             var authors = research[i].authors;
             var authorList = [];
@@ -13,11 +15,12 @@ class Research extends React.Component {
             for (var j=0; j<authors.length; ++j) {
                 if (authors[j] === highlightAuthor) {
                     authorList.push(e('strong', null, authors[j]));
+                    highlightAuthorHasBeenMentioned = true;
                 } else {
                     authorList.push(authors[j]);
                 }
 
-                if (j === 2 && authors.length > 4) {
+                if (j === 2 && authors.length > 4 && highlightAuthorHasBeenMentioned) {
                     authorList.push(e('i', null, ' et al.'));
                     break;
                 } else if (j === authors.length-2) {

@@ -6,12 +6,37 @@ class OpenSource extends React.Component {
         const entries = [];
 
         for (var i=0; i<projects.length; ++i) {
-            entries.push(
-                e('p', null,
-                    e('span', { className: 'margin-right--inline'}, e('a', { href: projects[i].link, target: '_blank' }, projects[i].title)),
-                    projects[i].groupProject ? e('span', { className: 'secondary' }, 'contributor') : ''
-                )
-            );
+            var project = projects[i];
+
+            if (project.link) {
+                entries.push(
+                    e('p', null,
+                        e('span', { className: 'margin-right--inline'}, e('a', { href: project.link, target: '_blank' }, project.title)),
+                        project.groupProject ? e('span', { className: 'secondary' }, 'Contributor') : ''
+                    )
+                );
+            } else if (project.multipleLinks) {
+                var links = [];
+
+                for (var k in project.multipleLinks) {
+                    if (links.length) {
+                        links.push(' • ');
+                    }
+
+                    links.push(
+                        e('a', { href: project.multipleLinks[k], target: '_blank' }, k)
+                    );
+                }
+                
+                entries.push(
+                    e('p', null,
+                        e('span', { className: 'margin-right--inline'}, project.title),
+                        ...links,
+                        project.groupProject ? e('span', { className: 'secondary' }, 'Contributor') : ''
+                    )
+                );
+            }
+            
         }
 
         return e('div', null,
