@@ -86,7 +86,7 @@ const MAX = {
                     link: 'https://2008.maxspeicher.com/2015/10/29/the-search-interaction-optimization-toolkit-the-essence-of-my-phd-thesis/'
                 },
                 {
-                    title: 'Inuit: The Interface Usability Instrument',
+                    title: 'Iɴᴜɪᴛ: The Interface Usability Instrument',
                     authors: ['M. Speicher', 'A. Both', 'M. Gaedke'],
                     link: 'https://2008.maxspeicher.com/2015/10/10/inuit-the-interface-usability-instrument/'
                 },
